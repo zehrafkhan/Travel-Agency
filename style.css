@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("./assets/Decore.png");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  color: #1b2f5a;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.scrollToTop {
+  display: none;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 4rem;
+  background-color: #f07167;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+}
+.scrollToTop i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.container {
+  margin: 0 10rem;
+}
+
+nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container {
+  display: flex;
+  justify-content: center;
+}
+nav .nav-container .brand {
+  color: #1b2f5a;
+  font-size: 3rem;
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+nav .nav-container .responsive-toggle {
+  display: none;
+}
+nav .links ul {
+  list-style-type: none;
+  display: flex;
+}
+nav .links ul li {
+  margin: 0 3rem;
+}
+nav .links ul li a {
+  color: #1b2f5a;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=style.css.map */
