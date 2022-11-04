@@ -36,7 +36,7 @@ button {
 .scrollToTop {
     display: none;
     height: 3.5rem;
-    width: 3.5rem; 
+    width: 3.5rem;
     border-radius: 4rem;
     background-color: $secondary-color;
     position: fixed;
@@ -44,15 +44,14 @@ button {
     right: 2rem;
     cursor: pointer;
     i {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: 90%;
-       font-size: 1.8rem;
-       color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        font-size: 1.8rem;
+        color: white;
     }
 }
-
 
 .container {
     margin: 0 10rem;
@@ -81,7 +80,7 @@ nav {
             display: flex;
             li {
                 margin: 0 3rem;
-                a{
+                a {
                     color: $primary-color;
                     font-size: 1.2rem;
                 }
@@ -99,33 +98,32 @@ button {
     font-size: 1.1rem;
 }
 
-
 .starter {
     display: flex;
     .content {
-      margin: 4rem 0 0 0;
-      .subTitle {
-        color: $secondary-color;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-      }
-      .title {
-        font-size: 3.3rem;
-        text-transform: capitalize;
-        margin-bottom: 1rem;
-        span {
-          background-image: url("assets/Decore\ Text.png");
-          background-size: 120%;
-          background-repeat: no-repeat;
-          background-position: bottom 5px left 0;
+        margin: 4rem 0 0 0;
+        .subTitle {
+            color: $secondary-color;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
         }
-      }
-      .description {
-        font-size: 1.1rem;
-        letter-spacing: 0.15rem;
-        margin-bottom: 1rem;
-      }
+        .title {
+            font-size: 3.3rem;
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+            span {
+                background-image: url("assets/Decore\ Text.png");
+                background-size: 120%;
+                background-repeat: no-repeat;
+                background-position: bottom 5px left 0;
+            }
+        }
+        .description {
+            font-size: 1.1rem;
+            letter-spacing: 0.15rem;
+            margin-bottom: 1rem;
+        }
         .last {
             display: flex;
             align-items: center;
@@ -149,12 +147,154 @@ button {
                 span {
                     font-size: 1rem;
                 }
-            } 
+            }
         }
     }
     .image {
         img {
             height: 32rem;
+        }
+    }
+}
+
+.services {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    .title {
+        font-size: 2rem;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+        margin-top: 2rem;
+        .card {
+            height: 11rem;
+            padding: 3rem 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 1rem;
+
+            .icon {
+                margin-bottom: 1rem;
+            }
+            .title {
+                margin-bottom: 1rem;
+                font-size: 1.4rem;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.destination {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .cards {
+        display: flex;
+        gap: 4rem;
+        .img {
+            height: 18rem;
+            width: 18rem;
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+    }
+    .time {
+        display: flex;
+        i {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.next-trip {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    .content {
+        .title {
+            font-size: 2rem;
+            margin: 0.3rem 0 1rem 0;
+        }
+        .steps {
+            .step {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1rem;
+                gap: 1rem;
+                .text {
+                    .title {
+                        font-size: 1.2rem;
+                        margin: 0.3rem 0;
+                    }
+                    p {
+                        width: 70%;
+                    }
+                }
+                .icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        height: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    .trip {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 2rem;
+        padding: 1rem;
+        .title {
+            margin: 0.5rem;
+        }
+        .subTitle {
+            margin: 0 0.5rem;
+            color: rgb(78, 78, 78);
+        }
+        .icons {
+            margin: 1rem 0;
+            display: flex;
+            .icon {
+                margin: 0 0 0 0.5rem;
+                background-color: rgb(224, 224, 224);
+                height: 2.5rem;
+                width: 2.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 3rem;
+            }
+        }
+        .likes {
+            display: flex;
+            justify-content: space-between;
+            margin: 0.5rem 1rem;
+            color: rgb(78, 78, 78);
         }
     }
 }

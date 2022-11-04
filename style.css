@@ -148,4 +148,139 @@ button {
 }
 .starter .image img {
   height: 32rem;
+}
+
+.services {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+.services .title {
+  font-size: 2rem;
+}
+.services .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.services .cards .card {
+  height: 11rem;
+  padding: 3rem 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+}
+.services .cards .card .icon {
+  margin-bottom: 1rem;
+}
+.services .cards .card .title {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+.services .cards .card p {
+  text-align: center;
+}
+
+.destination {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.destination .title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.destination .cards {
+  display: flex;
+  gap: 4rem;
+}
+.destination .cards .img {
+  height: 18rem;
+  width: 18rem;
+}
+.destination .content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+.destination .time {
+  display: flex;
+}
+.destination .time i {
+  margin-right: 1rem;
+}
+
+.next-trip {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+.next-trip .content .title {
+  font-size: 2rem;
+  margin: 0.3rem 0 1rem 0;
+}
+.next-trip .content .steps .step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+.next-trip .content .steps .step .text .title {
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
+.next-trip .content .steps .step .text p {
+  width: 70%;
+}
+.next-trip .content .steps .step .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.next-trip .content .steps .step .icon img {
+  height: 3rem;
+}
+.next-trip .trip {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.next-trip .trip .title {
+  margin: 0.5rem;
+}
+.next-trip .trip .subTitle {
+  margin: 0 0.5rem;
+  color: rgb(78, 78, 78);
+}
+.next-trip .trip .icons {
+  margin: 1rem 0;
+  display: flex;
+}
+.next-trip .trip .icons .icon {
+  margin: 0 0 0 0.5rem;
+  background-color: rgb(224, 224, 224);
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+}
+.next-trip .trip .likes {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1rem;
+  color: rgb(78, 78, 78);
 }/*# sourceMappingURL=style.css.map */
