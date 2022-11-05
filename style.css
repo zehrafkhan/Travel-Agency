@@ -3,6 +3,13 @@
 html {
   scroll-behavior: smooth;
 }
+html::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.6rem;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #f07167;
+}
 
 body {
   margin: 0;
@@ -24,7 +31,8 @@ h6,
 a,
 p,
 span,
-button {
+button,
+ul {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -283,4 +291,182 @@ button {
   justify-content: space-between;
   margin: 0.5rem 1rem;
   color: rgb(78, 78, 78);
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3rem;
+  gap: 10rem;
+}
+.testimonials .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.testimonials .content .title {
+  font-size: 1.8rem;
+}
+.testimonials .content .subTitle {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.testimonials .review {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 9rem;
+  width: 20rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+.testimonials .review p {
+  line-height: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+.testimonials .review h3 {
+  margin-bottom: 0.3rem;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.brands img {
+  margin: 0.2rem;
+}
+
+.subscribe {
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(-225deg, rgba(182, 206, 232, 0.431372549) 0px, rgba(133, 120, 245, 0.3882352941) 100%);
+  border-radius: 5rem 1rem 1rem 1rem;
+}
+.subscribe .title {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgb(82, 63, 117);
+}
+.subscribe input {
+  border: none;
+  width: 20rem;
+  border-radius: 0.3rem;
+  padding: 1.2rem 2rem;
+  margin-right: 1rem;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe button {
+  background-color: #f07167;
+  padding: 1.1rem 3rem;
+}
+
+footer {
+  margin: 5rem 0;
+}
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+footer .grid .brand .logo {
+  color: #1b2f5a;
+  font-size: 3rem;
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+footer .grid .brand .subTitle {
+  width: 80%;
+}
+footer .grid .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .grid .social .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+footer .grid .social .links .link {
+  height: 3rem;
+  width: 3rem;
+  margin: 0 1rem;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .grid .social .links .link i {
+  font-size: 1.3rem;
+}
+footer .grid .social .app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .grid .social .app .title {
+  margin-bottom: 0.7rem;
+  font-weight: 500;
+}
+footer .grid .social .app .links {
+  display: flex;
+  gap: 1rem;
+}
+footer .grid .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+footer .grid ul {
+  list-style: none;
+}
+footer .grid ul li {
+  margin: 1rem 0;
+}
+footer span {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-max: 360px) and (max-width: 480px) {
+  .container {
+    margin: 0 2rem;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav .nav-container {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  nav .nav-container .responsive-toggle {
+    display: block;
+  }
+  nav .responsive-toggle {
+    height: 4rem !important;
+  }
+  nav .responsive-toggle ul {
+    margin-top: 1rem;
+    display: flex !important;
+  }
+  nav .links {
+    height: 0;
+    transition: 0.4s ease-in-out;
+  }
+  nav .links ul {
+    display: none;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
